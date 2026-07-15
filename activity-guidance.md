@@ -10,7 +10,7 @@ There is no wrong output. There is only starting too late.
 
 ## Before you begin
 
-Make sure **Code execution and file creation** is enabled in Claude. Without it, artifacts won't work.
+Make sure **Code execution and file creation** is enabled in Claude. This unlocks the ability to build interactive tools, run code, and create files directly in the conversation.
 
 - Open Claude desktop
 - Click your name in the lower left corner
@@ -31,7 +31,7 @@ The more unexpected the combination, the more interesting the conversation tends
 
 Open Claude, describe what you want to build, and see what happens. Don't wait until you have a perfect plan. The act of building is how the plan emerges.
 
-You are building **artifacts** — interactive components, tools, pages, or experiences — that run directly inside Claude. They appear in a panel alongside your conversation. You can iterate on them in real time just by asking.
+The output can be anything — a working prototype, a research spec, a design concept, a set of prompts, a small tool, a game, a visual. There is no required format. What matters is that you made something, learned something from making it, and can talk about both.
 
 If something doesn't work or doesn't feel right, ask Claude to change it. That is the process.
 
@@ -60,34 +60,24 @@ When you add a new feature or change direction, pause briefly and ask: does this
 
 ### 5. Share your work
 
-When you have something worth showing, publish the artifact and share the link with the room. Artifacts in Claude are a great way to generate quick prototypes and share them with the team instantly — no hosting, no setup, no installs.
-
-- Open the artifact panel
-- Click **Publish**
-- Share the link in the group channel
-
-Everyone can open it on their own device.
+When you have something worth showing, share it with the room in whatever form it exists — a link, a file, a screenshot, a live demo, or just talking through it. There is no single required format for sharing.
 
 ---
 
-## What you can build with artifacts
+## What you can build
 
-Artifacts are self-contained and interactive. They run in the browser. They can't connect to the outside world, but that constraint is freeing — it keeps scope tight and the feedback loop fast.
+The output is whatever is most useful or interesting to your team. Some options:
 
-Things that work well:
+- A working interactive tool or calculator
+- A decision-making aid or game
+- A research spec or evaluation framework
+- A design concept or set of annotated wireframes
+- A set of prompts designed for a specific task
+- A small piece of code that does something useful
+- A prototype of an interface, experience, or flow
+- A written artefact — a brief, a script, a report — generated and refined with AI
 
-- Interactive tools and calculators
-- Decision-making aids
-- Games and playful experiences
-- Visualisations and dashboards built from data you paste in
-- Prototypes of interfaces or experiences
-- Anything that responds to input and does something with it
-
----
-
-## Going further (optional)
-
-If you're comfortable in a terminal and want to go beyond what artifacts can do, Claude Code lets you build locally with full file system access. This is opt-in — it's not expected, and it's not the point of the day. But if you want to explore it, ask a facilitator.
+Claude Code also lets you build locally with full file system access if you want to go further. This is opt-in and not expected. Ask a facilitator if you want to explore it.
 
 ---
 
