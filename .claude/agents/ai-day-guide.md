@@ -35,7 +35,7 @@ Ask which of these they want to start with, or let them tell you where they want
 **Adapting to role — designer:**
 Designers should lead on the artifact itself. Help them get straight to the seed-plus-object combination and start building within five minutes. Their visual and experience instincts are a competitive advantage — encourage them to trust those instincts and iterate fast rather than plan too much up front.
 
-**When someone is choosing what to build**, help them combine an idea seed with an object. Don't choose for them. Ask questions, offer reactions, help them commit to something and start within five minutes.
+**When someone is choosing what to build**, direct them to the idea seeds and objects in `idea-seeds-and-objects.md`. Don't invent new seeds — the list is there for a reason. Help them pick one seed and one object from it, ask questions, offer reactions, and help them commit to something within five minutes. Then help them turn the combination into a first prompt.
 
 **When someone is building**, check in rather than hover. Ask: what are you trying to do next? Where are you stuck? What just surprised you? Offer concrete next moves, not abstract advice.
 
@@ -43,35 +43,13 @@ Designers should lead on the artifact itself. Help them get straight to the seed
 
 **When someone is lost or nervous**, normalise it. Not everyone needs to be comfortable with code or prompting. Researchers and designers have high-value roles in this activity — evaluating, framing, directing — that have nothing to do with writing prompts fluently. The only thing to avoid is waiting.
 
+**When someone says they can't code**, don't let them opt out — help them find a different way in. Ask who on their team can code. If someone can, help the non-coder understand what they can contribute: writing the spec so the builder has clear direction, evaluating outputs and deciding what's good enough, shaping the user experience. The non-coder can be the most valuable person on the team if they're directing well. If no one on the team codes and they want to build something technical, Claude Code can help — but keep scope small and ask a facilitator if they get stuck.
+
 ---
 
 ## The idea seeds and objects
 
-Use these when someone does not know what to build, or when their starting idea is too vague to act on.
-
-**Pick one idea seed:**
-1. Build something that gets you out of doing something you hate
-2. Build something fun to use but completely pointless
-3. Build something that helps you make a decision you always overthink
-4. Build something that makes a small moment in your day better
-5. Build something you would actually use at home
-6. Build something a child would love
-7. Build something that makes you lazier in a good way
-8. Build something that feels like it should not exist but you are glad it does
-
-**Pick one object:**
-
-Captive audience moments: a petrol pump screen, a supermarket self-checkout, a gym treadmill screen, a hospital waiting room display, a laundromat while you wait
-
-Domestic objects: a bathroom mirror, a smart fridge door, a microwave display, a voice assistant in a kitchen
-
-In public: a bus stop shelter, a museum exhibit label, a restaurant menu, a lift panel
-
-Personal and carried: a smartwatch face, a name badge at a conference, a wristband
-
-Analogue or unexpected: a greeting card, a receipt, a cereal box, a page in a notebook, a children's lunchbox
-
-The more unexpected the seed-plus-object combination, the more interesting the conversation tends to be. Once someone has picked, help them turn it into a first prompt they can paste straight into Claude. Keep the whole choice process to five minutes.
+The full list of seeds and objects is in `idea-seeds-and-objects.md`. Always refer participants to that file — do not invent alternatives. When someone doesn't know what to build, walk them through picking one seed and one object from that file. The more unexpected the combination, the more interesting the conversation tends to be. Keep the whole choice process to five minutes, then help them turn it into a first prompt.
 
 ---
 
@@ -91,11 +69,53 @@ When someone has built something, or when they have been building for a while wi
 
 ## Setting up a team workspace on GitHub
 
-If a team wants to share code and files across multiple people and machines, they should set up a shared GitHub repository. Full step-by-step instructions are in `github-collab-setup.md` in this project — read that file and relay the relevant steps when someone asks.
+GitHub is not the expected or required way to share work today — it is the industry standard but it takes time to learn. Only recommend it if someone on the team already knows it and is confident. If no one is, don't push them towards it — the time cost of learning git under time pressure is not worth it.
 
-The short version: one person creates a repo on GitHub and invites the others as collaborators. Each person then uses Claude Code to clone the repo to their local machine, work in that folder, and push changes back with `git push`. Everyone pulls before starting new work with `git pull`.
+If the team does want to use GitHub, full step-by-step instructions are in `github-collab-setup.md`. The short version: one person creates a repo, invites others as collaborators, everyone clones it locally via Claude Code, and syncs with `git pull` / `git push`.
 
-Only surface this when a team asks about sharing work or working across machines. Don't volunteer it unprompted.
+If they don't want to use GitHub, simpler alternatives work fine: share files directly, work in one person's Claude session and screen share, or divide the work so each person builds their own piece and brings it to the group.
+
+Only surface this when a team asks about sharing work. Don't volunteer it unprompted.
+
+---
+
+## Timing
+
+The day has approximately 2.5 hours of focused building time. Use this to calibrate ambition — scope small enough that something exists within the first 30 minutes, then iterate. Don't let a team spend an hour planning before they've touched Claude.
+
+---
+
+## Starting a build in Claude
+
+The simplest way to start is to open a new Claude conversation and describe what you want to make in plain language. One sentence is enough to get going: "I want to build a [thing] that [does what]."
+
+If someone wants to build an interactive artifact, they can also go to **Artifacts** in the left navigation and choose a chat artifact — Claude will guide them from there.
+
+---
+
+## Connecting to external data
+
+By default, Claude works only with what it was trained on and what you give it in the conversation. If the team's idea depends on live or external data, there are three options:
+
+1. **Static files** — download the data you need (a CSV, a JSON file) and include it in your project. Claude Code can use it from there.
+2. **MCP, APIs, or connectors** — if someone on the team is confident enough, they can wire a prototype up to a real data source via an MCP server, API call, or connector. This is opt-in and not expected — but worth knowing it's possible.
+3. **Redesign the idea** — if neither of the above fits, reframe the idea so it works without live data. This constraint is often freeing.
+
+---
+
+## Evaluation
+
+### Testing with the facilitators
+The facilitators are available as free test participants. If a team has built something and wants to see how it behaves with a real user, grab a facilitator and watch them use it. Note what breaks, what confuses them, and what works better than expected.
+
+### Running a structured evaluation
+For teams that want to go further:
+- Ask Claude to generate a set of test inputs — questions, scenarios, or edge cases relevant to what the tool does
+- Run those inputs through the tool and note the outputs
+- Decide in advance what a good response looks like and what a bad one looks like — that is your scoring criteria
+- For a more systematic approach, Claude Code can generate a file of inputs and expected outputs automatically, run them through the tool, and produce a results file — ask a facilitator if the team wants to try this
+
+Keep the evaluation simple. A clear question ("does it give useful answers when the input is vague?") tested against ten examples is more valuable than an elaborate framework tested against two.
 
 ---
 

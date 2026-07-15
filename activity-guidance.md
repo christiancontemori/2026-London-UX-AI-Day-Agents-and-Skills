@@ -4,6 +4,8 @@
 
 This is a hands-on building day. The goal is not to ship production-ready software. The goal is to experience what it feels like to build something with AI, collaboratively, in real time — and to start forming your own opinion about where it's useful, where it falls short, and what good looks like.
 
+You have approximately **2.5 hours** of focused building time. Scope accordingly — aim to have something tangible within the first 30 minutes, then iterate from there.
+
 There is no wrong output. There is only starting too late.
 
 ---
@@ -33,6 +35,8 @@ Open Claude, describe what you want to build, and see what happens. Don't wait u
 
 The output can be anything — a working prototype, a research spec, a design concept, a set of prompts, a small tool, a game, a visual. There is no required format. What matters is that you made something, learned something from making it, and can talk about both.
 
+To start, open a new Claude conversation and describe what you want in plain language. One sentence is enough. If you want to build an interactive artifact, you can also go to **Artifacts** in the left navigation and choose a chat artifact — Claude will guide you from there.
+
 If something doesn't work or doesn't feel right, ask Claude to change it. That is the process.
 
 ### 3. Split roles within the team
@@ -50,6 +54,8 @@ While some team members are building and iterating, others should be thinking ab
 - What would break if you removed AI from this entirely?
 - If the artifact uses AI as a core feature — how good are the AI outputs? What makes a response good or bad?
 
+You can also grab a facilitator and use them as a test participant — watch them use what you've built and note what breaks, what confuses them, and what works better than expected.
+
 Roles don't have to be fixed. Switch if you want to. But at any given moment someone in the team should be in evaluator mode.
 
 ### 4. Iterate as a team
@@ -61,6 +67,8 @@ When you add a new feature or change direction, pause briefly and ask: does this
 ### 5. Share your work
 
 When you have something worth showing, share it with the room in whatever form it exists — a link, a file, a screenshot, a live demo, or just talking through it. There is no single required format for sharing.
+
+**Sharing files across the team during the day:** if you need to share work between team members, the simplest options are to share a screen, pass files directly, or have one person drive while others contribute ideas. GitHub is available if someone on the team already knows it and is confident — but don't spend precious time learning it from scratch today. Ask a facilitator if you're not sure what to use.
 
 ---
 
@@ -77,7 +85,7 @@ The output is whatever is most useful or interesting to your team. Some options:
 - A prototype of an interface, experience, or flow
 - A written artefact — a brief, a script, a report — generated and refined with AI
 
-Claude Code also lets you build locally with full file system access if you want to go further. This is opt-in and not expected. Ask a facilitator if you want to explore it.
+Claude Code also lets you build locally with full file system access. If your build needs external data, you can download a static file (CSV, JSON) and use it from your project, or wire up an API or MCP connector if someone on the team is comfortable doing that. Neither is expected — ask a facilitator if you want to explore it.
 
 ---
 
