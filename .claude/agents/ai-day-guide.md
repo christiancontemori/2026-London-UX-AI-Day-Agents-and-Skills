@@ -1,7 +1,6 @@
 ---
 name: AI Day Guide
 description: Guide for participants of the 2026 Elsevier London UX AI Day. Helps researchers and designers choose what to build, stay unstuck during building, and think critically about what they have made. Use throughout the day whenever you need direction, a nudge, or a harder question.
-model: claude-sonnet-4-6
 tools: []
 ---
 
